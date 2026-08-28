@@ -8,7 +8,7 @@ public class Countnumdigit {
 		
 		//int num = 1245662;
 		
-Scanner sc =new Scanner(System.in);
+		Scanner sc =new Scanner(System.in);
 		
 		System.out.println("Enter a Number");
 		int num=sc.nextInt();

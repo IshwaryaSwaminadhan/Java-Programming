@@ -6,7 +6,7 @@ public class FindHowmanyDuplicatesInArray {
 		// Find duplicates in the array
 
 		int a[]= {100,200,300,500,200,500,200,300,};
-		int value=500;
+		int value=200;
 		int count=0;
 		
 		/* for(int i=0;i<a.length;i++) {

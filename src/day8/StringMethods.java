@@ -56,14 +56,40 @@ public class StringMethods {
 		// equals(); equalsIgnore(); --  compare strings
 		s1="welcome";
 		s2="welcome";
-		
-		System.out.println(s1==s2); //true
-		System.out.println(s1.equals(s2));//true
+
+		System.out.println(s1==s2); //true //
+		System.out.println(s1.equals(s2));//true // it compare the values of the object
 		System.out.println(s1.equals("welcome")); //true
 		System.out.println(s1.equals("Welcome")); // false --> Case sensitive
 		System.out.println(s1.equalsIgnoreCase("WELCOME")); // true --> by this method it ignores the case sensitive
+		
+		String s5= new String("welcome");
+		String s6 = new String("welcome");
+		System.out.println(s5==s6); //false// it compares the objects so here two different objects
+		
+		System.out.println(s5.equals(s6)); //true
+		
 	
-	
+		// replace
+		String s8 = "Welcome to Selenium Java Selenium Python Selenium";
+
+		// Replace every 'e' with 'X'
+		System.out.println(s8.replace('e', 'x'));
+		// Output: WxlcomX to SxlXnium Java SxlXnium Python SxlXnium
+
+		String s7 = "abc@gmail.com";
+		
+		// Using substring() — hardcoded index:
+		System.out.println(s7.substring(0, 3));  // Output: abc
+		// Problem: if username changes to 'abc123', the index 3 is WRONG
+		// You would have to manually update the index every time.
+
+		// Using split() — dynamic, works for any username length:
+		String[] a = s7.split("@");             // Split by '@'
+		System.out.println(a[0]);               // Output: abc  (username, always correct)
+		System.out.println(a[1]);               // Output: gmail.com
+
+
 	}
 
 }

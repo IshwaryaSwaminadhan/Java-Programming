@@ -16,7 +16,7 @@ public class TwoDimensionalArray {
 		// 1)Declaring an two dimensional array
 
 		// Approach1
-		/* int a[][]= new int[3][2]; // it will allocate 3 rows and 2 columns like this 
+		/* int a[][]= new a[3][2]; // it will allocate 3 rows and 2 columns like this 
 		
 		/*  			   c1 c2
 		 *  Index  		   0 1
